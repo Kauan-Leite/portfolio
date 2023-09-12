@@ -5,6 +5,7 @@ import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './GlobalStyle';
 import { Header } from '@/components/Header/Header';
 import '../i18n';
+import { NavBar } from '@/components/NavBar/NavBar';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -18,6 +19,7 @@ export default function Home() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Header theme={theme} themeToggler={themeToggler} />
+        <NavBar />
       </ThemeProvider>
     </main>
   );

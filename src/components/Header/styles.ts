@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #222;
+  background-color: ${props => props.theme.colors.primary};
   display: flex;
   justify-content: end;
+  transition: .5s;
+
 `
 
 export const LanguageBtn = styled.button`
@@ -14,8 +16,10 @@ export const LanguageBtn = styled.button`
   width: 40px;
   height: 40px;
   border: none;
-  background-color: #FAB301;
+  background-color: ${props => props.theme.colors.secondary};
   cursor: pointer;
+  transition: .5s;
+
 `
 
 export const ModeBtn = styled.button`
@@ -25,8 +29,9 @@ export const ModeBtn = styled.button`
   width: 40px;
   height: 40px;
   border: none;
-  background-color: #FAB301;
+  background-color: ${props => props.theme.colors.secondary};
   cursor: pointer;
+  transition: .5s;
 
 `
 
