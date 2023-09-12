@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './GlobalStyle';
+import { Header } from '@/components/Header/Header';
+import '../i18n';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -15,8 +17,7 @@ export default function Home() {
     <main>
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <p>Portfolio</p>
-        <button onClick={themeToggler}>Change</button>
+        <Header theme={theme} themeToggler={themeToggler} />
       </ThemeProvider>
     </main>
   );
