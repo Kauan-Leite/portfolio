@@ -6,6 +6,7 @@ import { GlobalStyles } from './GlobalStyle';
 import { Header } from '@/components/Header/Header';
 import '../i18n';
 import { NavBar } from '@/components/NavBar/NavBar';
+import { Hero } from '@/components/Hero/Hero';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -20,6 +21,7 @@ export default function Home() {
         <GlobalStyles />
         <Header theme={theme} themeToggler={themeToggler} />
         <NavBar />
+        <Hero />
       </ThemeProvider>
     </main>
   );
