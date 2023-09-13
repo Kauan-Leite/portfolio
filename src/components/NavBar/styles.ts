@@ -4,28 +4,44 @@ export const Container = styled.div`
   top: 28%;
   right: 0%;
   position: fixed;
-  margin-right: 50px;
+  margin-right: 46px;
 `
 
 export const Nav = styled.div`
-  background-color: ${props => props.theme.colors.secondary};
   display: flex;
   flex-direction: column;
   max-width: 40px;
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
-  transition: .5s;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  a {
+  .active {
+    background-color: ${props => props.theme.colors.secondary};
     text-decoration: none;
     color: white;
-    margin: 20px;
-    width: 80%;
-    height: 100%;
+    margin: 12px;
+    /* width: 40px; */
+    padding: 8px;
     border-radius: 40px;
     text-align: center;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    background-color: #222;
+    text-decoration: none;
+    color: white;
+    margin: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 `

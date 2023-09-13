@@ -12,7 +12,7 @@ export const NavBar = () => {
     <Container>
       <Nav>
         <Link href="/">
-          <HomeRoundedIcon style={{ fontSize: '28px' }} />
+          <HomeRoundedIcon className="active" style={{ fontSize: '28px' }} />
         </Link>
         <Link href="/">
           <PersonRoundedIcon style={{ fontSize: '28px' }} />
