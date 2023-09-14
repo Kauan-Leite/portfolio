@@ -15,7 +15,7 @@ import {
 export const Hero = () => {
   const { t } = i18n.useTranslation('HERO');
   return (
-    <Container>
+    <Container id="home">
       <Left>
         <ColoredDiv />
         <Image src="/Images/Hero/placeholder.svg" alt="user image" />

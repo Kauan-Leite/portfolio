@@ -7,6 +7,7 @@ import { Header } from '@/components/Header/Header';
 import '../i18n';
 import { NavBar } from '@/components/NavBar/NavBar';
 import { Hero } from '@/components/Hero/Hero';
+import { AboutMe } from '@/components/AboutMe/AboutMe';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -22,6 +23,7 @@ export default function Home() {
         <Header theme={theme} themeToggler={themeToggler} />
         <NavBar />
         <Hero />
+        <AboutMe />
       </ThemeProvider>
     </main>
   );

@@ -13,6 +13,8 @@ export const Nav = styled.div`
   max-width: 40px;
   justify-content: center;
   align-items: center;
+    transition: .5s;
+
 
   .active {
     background-color: ${props => props.theme.colors.secondary};
