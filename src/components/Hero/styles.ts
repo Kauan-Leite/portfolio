@@ -32,7 +32,7 @@ export const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 400px;
+  max-width: 450px;
   text-align: center;
 `
 
@@ -72,7 +72,7 @@ export const PlusBtn = styled(AddIcon)`
   background-color: ${props => props.theme.colors.secondary};
   color: white;
   margin-right: -35px;
-  margin-left: 11px;
+  margin-left: 23px;
   height: 50px;
   width: 50px;
   border-radius: 25px;

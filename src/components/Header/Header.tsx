@@ -23,7 +23,7 @@ export const Header = ({ theme, themeToggler }: Props) => {
   };
 
   return (
-    <Container>
+    <Container id="home">
       <LanguageBtn onClick={handleChangeLanguage}>
         {t('BUTTON_LANGUAGE')}
       </LanguageBtn>

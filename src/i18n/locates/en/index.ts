@@ -1,8 +1,10 @@
 import { ResourceI18nType } from '@/i18n/locates/type'
 import { Header } from './Header'
 import { Hero } from './Hero'
+import { AboutMe } from './AboutMe'
 
 export const ResourceI18nEN: ResourceI18nType = {
   HEADER: Header,
-  HERO: Hero
+  HERO: Hero,
+  ABOUTME: AboutMe,
 }

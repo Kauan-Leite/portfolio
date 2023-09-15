@@ -41,7 +41,7 @@ export const NavBar = () => {
   return (
     <Container>
       <Nav>
-        <Link href="#">
+        <Link href="#home">
           <HomeRoundedIcon
             className={currActive === 'home' ? 'active' : ''}
             style={{ fontSize: '28px' }}
