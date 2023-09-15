@@ -11,5 +11,11 @@ export const AboutMe = {
   LABEL_NATIONALITY: 'Nacionalidade',
   LABEL_ADDRESS: 'Endereço',
 
+  RESPONSE_AGE: "Anos",
+  RESPONSE_FREELANCE: "Disponivel",
+  RESPONSE_LANGUAGES: "Português, Inglês",
+  RESPONSE_NATIONALITY: "Brasileiro",
+  RESPONSE_ADDRESS: "São Paulo - Brasil",
+
   DOWNLOAD_URL: '/Curriculum/pt.txt',
 }

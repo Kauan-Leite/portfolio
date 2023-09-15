@@ -28,6 +28,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
   font-weight: 900;
   font-size: 35px;
+  z-index: 1;
 
   span {
     color: ${props => props.theme.colors.secondary};
@@ -74,7 +75,7 @@ export const BoxDiv = styled.div`
 `
 
 export const Box = styled.div`
-  width: 300px;
+  width: 340px;
   height: 200px;
   margin: 10px;
   border-radius: 6px;

@@ -21,6 +21,12 @@ export type ResourceI18nType = {
     LABEL_NATIONALITY: string,
     LABEL_ADDRESS: string,
 
+    RESPONSE_AGE: string,
+    RESPONSE_FREELANCE: string,
+    RESPONSE_LANGUAGES: string,
+    RESPONSE_NATIONALITY: string,
+    RESPONSE_ADDRESS: string,
+
     DOWNLOAD_URL: string,
   }
 }
