@@ -9,6 +9,7 @@ import { NavBar } from '@/components/NavBar/NavBar';
 import { Hero } from '@/components/Hero/Hero';
 import { AboutMe } from '@/components/AboutMe/AboutMe';
 import { Skills } from '@/components/Skills';
+import { Experience } from '@/components/Experience/Experience';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -26,6 +27,7 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Skills />
+        <Experience />
       </ThemeProvider>
     </main>
   );
