@@ -10,6 +10,7 @@ export const Container = styled.div`
   align-items: center;
   margin-top: 25vh;
   margin-bottom: 25vh;
+  padding-top: 200px;
 `
 
 export const BehindTitle = styled.h1`

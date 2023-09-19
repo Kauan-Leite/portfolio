@@ -28,6 +28,7 @@ export const NavBar = () => {
     const verificarVisibilidade = () => {
       checkVisible(document.getElementById('home'), 'home');
       checkVisible(document.getElementById('aboutme'), 'aboutme');
+      checkVisible(document.getElementById('skills'), 'skills');
     };
 
     window.addEventListener('scroll', verificarVisibilidade);
@@ -53,7 +54,7 @@ export const NavBar = () => {
             style={{ fontSize: '28px' }}
           />
         </Link>
-        <Link href="/">
+        <Link href="#skills">
           <HomeRepairServiceRoundedIcon
             className={currActive === 'skills' ? 'active' : ''}
             style={{ fontSize: '28px' }}

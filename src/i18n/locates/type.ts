@@ -28,5 +28,10 @@ export type ResourceI18nType = {
     RESPONSE_ADDRESS: string,
 
     DOWNLOAD_URL: string,
+  },
+  SKILLS: {
+    BEHIND_TITLE: string,
+    TITLE_1: string,
+    TITLE_2: string,
   }
 }
