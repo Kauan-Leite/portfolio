@@ -10,6 +10,19 @@ export const Container = styled.div`
   margin-top: 40vh;
   margin-bottom: 40vh;
 `
+
+export const BehindTitle = styled.h1`
+  color: gray;
+  opacity: 0.2;
+  font-size: 70px;
+  letter-spacing:10px;
+  margin: 0;
+  margin-bottom: -82px;
+
+  text-transform: uppercase;
+  font-weight: 900;
+`
+
 export const Title = styled.h1`
   text-transform: uppercase;
   font-weight: 900;
@@ -26,6 +39,7 @@ export const LogosContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
+  margin-top: 30px;
 `
 
 export const Skill = styled.div`
@@ -33,12 +47,13 @@ export const Skill = styled.div`
   text-align: center;
   filter: grayscale(100%);
   transition: .5s;
-  color: #0F110C;
+  color: ${props => props.theme.colors.primary};
+  width: 120px;
 
   &:hover {
     filter: grayscale(0%);
     cursor: pointer;
-    color: white;
+    color: ${props => props.theme.color};
   }
 `
 

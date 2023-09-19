@@ -1,5 +1,12 @@
-import Image from 'next/image';
-import { Container, Logo, LogosContainer, Skill, Title } from './styles';
+import * as i18n from 'react-i18next';
+import {
+  BehindTitle,
+  Container,
+  Logo,
+  LogosContainer,
+  Skill,
+  Title,
+} from './styles';
 
 export const Skills = () => {
   const skills = [
@@ -105,9 +112,14 @@ export const Skills = () => {
     },
   ];
 
+  const { t } = i18n.useTranslation('SKILLS');
+
   return (
     <Container id="skills">
-      <Title>My Skills</Title>
+      <BehindTitle>{t('BEHIND_TITLE')}</BehindTitle>
+      <Title>
+        {t('TITLE_1')} <span>{t('TITLE_2')}</span>
+      </Title>
       <LogosContainer>
         {skills.map((item) => {
           return (
