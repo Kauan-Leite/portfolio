@@ -34,9 +34,17 @@ export const Title = styled.h1`
   }
 `
 
-export const XpContainer = styled.div``
+export const XpContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
 
-export const Xp = styled.div``
+export const Xp = styled.div`
+  display: flex;
+  margin: 60px;
+  width: 600px;
+`
 
 export const Logo = styled(Image)`
   background-color: ${props => props.theme.colors.secondary};
@@ -44,13 +52,38 @@ export const Logo = styled(Image)`
   border-radius: 100%;
 `
 
+export const Line = styled.div`
+  width: 1px;
+  min-height: 90px;
+  background-color: gray;
+`
+
+export const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+export const Right = styled.div`
+  margin-top: 10px;
+  margin-left: 20px;
+`
+
 export const Data = styled.h2`
   background-color: gray;
   border-radius: 25px;
-  padding: 10px;
+  padding: 4px;
+  font-size: 12px;
+  max-width: 90px;
+  text-align: center;
 `
 
-export const XpTitle = styled.h1``
+export const XpTitle = styled.h2`
+  span {
+    font-weight: 100;
+  }
+`
 
 export const Desc = styled.p``
 
