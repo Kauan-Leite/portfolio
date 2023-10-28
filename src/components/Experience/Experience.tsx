@@ -1,3 +1,5 @@
+import * as i18n from 'react-i18next';
+
 import {
   BehindTitle,
   Container,
@@ -14,18 +16,20 @@ import {
 } from './styles';
 
 export const Experience = () => {
+  const { t } = i18n.useTranslation('EXPERIENCE');
+
   return (
     <Container id="xp">
-      <BehindTitle>Professional</BehindTitle>
+      <BehindTitle>{t('BEHIND_TITLE')}</BehindTitle>
       <Title>
-        Experience <span>&</span> Education
+        {t('TITLE_1')} <span>&</span> {t('TITLE_2')}
       </Title>
 
       <XpContainer>
         <Xp>
           <Left>
             <Logo
-              src="/Images/Skills/Logos/reduxLogo.svg"
+              src="/Images/Experience/Logos/globe.png"
               width={50}
               height={50}
               alt=""
@@ -33,19 +37,17 @@ export const Experience = () => {
             <Line />
           </Left>
           <Right>
-            <Data>2023 - present</Data>
+            <Data>{t('ITEM_1_DATE')}</Data>
             <XpTitle>
-              Web Developer <span> - Osten Moove</span>
+              {t('ITEM_1_TITLE_1')} <span> - {t('ITEM_1_TITLE_2')}</span>
             </XpTitle>
-            <Desc>
-              Desenvolvimento de sites empresariais utilizando Next.JS
-            </Desc>
+            <Desc>{t('ITEM_1_SUBTITLE')}</Desc>
           </Right>
         </Xp>
         <Xp>
           <Left>
             <Logo
-              src="/Images/Skills/Logos/reduxLogo.svg"
+              src="/Images/Experience/Logos/books.png"
               width={50}
               height={50}
               alt=""
@@ -53,18 +55,17 @@ export const Experience = () => {
             <Line />
           </Left>
           <Right>
-            <Data>2023 - present</Data>
+            <Data>{t('ITEM_2_DATE')}</Data>
             <XpTitle>
-              Graduação em Ánalise e Desenvolvimento de Sistemas{' '}
-              <span> - Cruzeiro do Sul</span>
+              {t('ITEM_2_TITLE_1')} <span> - {t('ITEM_2_TITLE_2')}</span>
             </XpTitle>
-            <Desc>Universidade Cruzeiro do Sul (UNICSUL)</Desc>
+            <Desc>{t('ITEM_2_SUBTITLE')}</Desc>
           </Right>
         </Xp>
         <Xp>
           <Left>
             <Logo
-              src="/Images/Skills/Logos/reduxLogo.svg"
+              src="/Images/Experience/Logos/books.png"
               width={50}
               height={50}
               alt=""
@@ -72,17 +73,17 @@ export const Experience = () => {
             <Line />
           </Left>
           <Right>
-            <Data>2022 - 2023</Data>
+            <Data>{t('ITEM_3_DATE')}</Data>
             <XpTitle>
-              Desenvolvimento Web FullStack <span> - Trybe</span>
+              {t('ITEM_3_TITLE_1')} <span> - {t('ITEM_3_TITLE_2')}</span>
             </XpTitle>
-            <Desc>Trybe - curso livre com mais de 1500 horas de conteúdo</Desc>
+            <Desc>{t('ITEM_3_SUBTITLE')}</Desc>
           </Right>
         </Xp>
         <Xp>
           <Left>
             <Logo
-              src="/Images/Skills/Logos/reduxLogo.svg"
+              src="/Images/Experience/Logos/books.png"
               width={50}
               height={50}
               alt=""
@@ -90,12 +91,11 @@ export const Experience = () => {
             <Line />
           </Left>
           <Right>
-            <Data>2019 - 2021</Data>
+            <Data>{t('ITEM_4_DATE')}</Data>
             <XpTitle>
-              Técnico em Ánalise e Desenvolvimento de Sistemas{' '}
-              <span> - ETEC</span>
+              {t('ITEM_4_TITLE_1')} <span> - {t('ITEM_4_TITLE_2')}</span>
             </XpTitle>
-            <Desc>Escola Técnica Estadual (ETEC)</Desc>
+            <Desc>{t('ITEM_4_SUBTITLE')}</Desc>
           </Right>
         </Xp>
       </XpContainer>
