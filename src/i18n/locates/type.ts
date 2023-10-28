@@ -33,5 +33,30 @@ export type ResourceI18nType = {
     BEHIND_TITLE: string,
     TITLE_1: string,
     TITLE_2: string,
+  },
+  EXPERIENCE: {
+    TITLE_1: string,
+    TITLE_2: string,
+    BEHIND_TITLE: string,
+
+    ITEM_1_DATE: string,
+    ITEM_1_TITLE_1: string,
+    ITEM_1_TITLE_2: string,
+    ITEM_1_SUBTITLE: string,
+
+    ITEM_2_DATE: string,
+    ITEM_2_TITLE_1: string,
+    ITEM_2_TITLE_2: string,
+    ITEM_2_SUBTITLE: string,
+    
+    ITEM_3_DATE: string,
+    ITEM_3_TITLE_1: string,
+    ITEM_3_TITLE_2: string,
+    ITEM_3_SUBTITLE: string,
+
+    ITEM_4_DATE: string,
+    ITEM_4_TITLE_1: string,
+    ITEM_4_TITLE_2: string,
+    ITEM_4_SUBTITLE: string,
   }
 }
