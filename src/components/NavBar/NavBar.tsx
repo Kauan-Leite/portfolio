@@ -30,6 +30,7 @@ export const NavBar = () => {
       checkVisible(document.getElementById('aboutme'), 'aboutme');
       checkVisible(document.getElementById('skills'), 'skills');
       checkVisible(document.getElementById('xp'), 'xp');
+      checkVisible(document.getElementById('projects'), 'projects');
     };
 
     window.addEventListener('scroll', verificarVisibilidade);
@@ -67,7 +68,7 @@ export const NavBar = () => {
             style={{ fontSize: '28px' }}
           />
         </Link>
-        <Link href="/">
+        <Link href="#projects">
           <KeyboardRoundedIcon
             className={currActive === 'projects' ? 'active' : ''}
             style={{ fontSize: '28px' }}
