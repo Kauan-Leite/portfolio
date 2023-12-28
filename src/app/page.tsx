@@ -10,6 +10,7 @@ import { Hero } from '@/components/Hero/Hero';
 import { AboutMe } from '@/components/AboutMe/AboutMe';
 import { Skills } from '@/components/Skills';
 import { Experience } from '@/components/Experience/Experience';
+import { Projects } from '@/components/Projects/Projects';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -28,6 +29,7 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Experience />
+        <Projects />
       </ThemeProvider>
     </main>
   );
