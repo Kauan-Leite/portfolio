@@ -82,6 +82,21 @@ export const Box = styled.div`
   border-radius: 6px;
   border: 1px solid #545454;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+export const Number = styled.h1`
+  font-size: 40px;
+  padding-left: 40px;
+  margin-bottom: 0px;
+  color: ${props => props.theme.colors.secondary};
+`
+
+export const Txt = styled.h2`
+  font-size: 18px;
+  padding-left: 40px;
 `
 
 export const MoreBtn = styled.a`

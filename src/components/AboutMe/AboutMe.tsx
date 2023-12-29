@@ -11,8 +11,10 @@ import {
   Info,
   InfosDiv,
   MoreBtn,
+  Number,
   Subtitle,
   Title,
+  Txt,
 } from './styles';
 
 export const AboutMe = () => {
@@ -54,7 +56,7 @@ export const AboutMe = () => {
               <span>Freelance:</span> {t('RESPONSE_FREELANCE')}
             </DetailLine>
             <DetailLine>
-              <span>{t('LABEL_PHONE')}:</span> +55 (11) 93945-5929
+              <span>{t('LABEL_PHONE')}:</span> +55 (11) 96172-8880
             </DetailLine>
             <DetailLine>
               <span>{t('LABEL_LANGUAGES')}:</span> {t('RESPONSE_LANGUAGES')}
@@ -80,10 +82,22 @@ export const AboutMe = () => {
           </Info>
         </InfosDiv>
         <BoxDiv>
-          <Box />
-          <Box />
-          <Box />
-          <Box />
+          <Box>
+            <Number>+4</Number>
+            <Txt>{t('BOX_1')}</Txt>
+          </Box>
+          <Box>
+            <Number>+1</Number>
+            <Txt>{t('BOX_2')}</Txt>
+          </Box>
+          <Box>
+            <Number>1</Number>
+            <Txt>{t('BOX_3')}</Txt>
+          </Box>
+          <Box>
+            <Number>+10</Number>
+            <Txt>{t('BOX_4')}</Txt>
+          </Box>
         </BoxDiv>
       </ContentDiv>
     </Container>
