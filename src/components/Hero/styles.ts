@@ -51,7 +51,7 @@ export const Description = styled.p`
   line-height: 25px;
 `
 
-export const MoreBtn = styled.button`
+export const MoreBtn = styled.a`
   background: none;
   border: 2px solid ${props => props.theme.colors.secondary};
   width: 50%;
@@ -61,6 +61,8 @@ export const MoreBtn = styled.button`
   text-transform: uppercase;
   font-weight: 900;
   transition: .5s;
+  font-size: 14px;
+  text-decoration: none;
 
   display: flex;
   justify-content: center;

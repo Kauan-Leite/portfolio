@@ -24,7 +24,7 @@ export const Hero = () => {
         <Title>{t('TITLE')}</Title>
         <Subtitle>{t('SUBTITLE')}</Subtitle>
         <Description>{t('DESCRIPTION')}</Description>
-        <MoreBtn>
+        <MoreBtn href="#aboutme">
           {t('MORE_BTN')}
           <PlusBtn />
         </MoreBtn>
