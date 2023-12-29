@@ -157,10 +157,20 @@ export const Projects = () => {
       </ContainerButtons>
       <ContainerSlides>
         <SwiperEdited
-          slidesPerView={3}
+          slidesPerView={1}
           // spaceBetween={50}
+          breakpoints={{
+            1000: {
+              slidesPerView: 2,
+              grid: { rows: 2 },
+            },
+            1280: {
+              slidesPerView: 3,
+              grid: { rows: 2 },
+            },
+          }}
           grid={{
-            rows: 2,
+            rows: 1,
           }}
           pagination={{
             clickable: true,

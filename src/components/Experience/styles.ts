@@ -21,6 +21,10 @@ export const BehindTitle = styled.h1`
 
   text-transform: uppercase;
   font-weight: 900;
+
+  @media (max-width: 1280px) {
+    font-size: auto;
+  }
 `
 
 export const Title = styled.h1`
@@ -31,6 +35,10 @@ export const Title = styled.h1`
 
   span {
     color: ${props => props.theme.colors.secondary};
+  }
+  @media (max-width: 1280px) {
+    /* font-size: 68px; */
+    max-width: 100%;
   }
 `
 
@@ -44,6 +52,10 @@ export const Xp = styled.div`
   display: flex;
   margin: 60px;
   width: 600px;
+  
+  @media (max-width: 1280px) {
+    margin: 0;
+  }
 `
 
 export const Logo = styled(Image)`

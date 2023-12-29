@@ -37,22 +37,42 @@ export const Title = styled.h1`
 export const Content = styled.div`
   display: flex;
   width: 75%;
+
+  @media (max-width:1080px) {
+    flex-direction: column;
+  }
 `
 
 export const LeftSide = styled.div`
   width: 100%;
+
+  @media (max-width:1080px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const TitleLeft = styled.h3``
 
 export const TextLeft = styled.p`
   max-width: 60%;
+
+  @media (max-width:1080px) {
+    text-align: center;
+  }
 `
 
 export const Info = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
+  @media (max-width:1080px) {
+    /* background-color: red; */
+    min-width: 30%;
+  }
 `
 
 export const Logo = styled.img`
@@ -76,6 +96,11 @@ export const Social = styled.div`
   display: flex;
   justify-content: space-between;
   margin-left: 6px;
+
+  @media (max-width:1080px) {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 `
 
 export const MediaBtn = styled.img`
@@ -104,6 +129,11 @@ export const LineOne = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 12px;
+ 
+  @media (max-width:1080px) {
+    flex-direction: column;
+    gap: 12px;
+  }
 `
 
 export const LineTwo = styled.div`
@@ -118,6 +148,10 @@ export const LineFour = styled.div`
   margin-bottom: 12px;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width:1080px) {
+    justify-content: center;
+  }
 `
 
 export const BtnSend = styled.button`

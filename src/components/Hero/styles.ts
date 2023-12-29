@@ -4,11 +4,20 @@ import AddIcon from '@mui/icons-material/Add';
 export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const Left = styled.div`
   display: flex;
-  /* margin-left: -200px; */
+  @media (max-width: 1280px) {
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
 `
 
 export const ColoredDiv = styled.div`
@@ -34,6 +43,11 @@ export const Right = styled.div`
   justify-content: center;
   max-width: 450px;
   text-align: center;
+
+  @media (max-width: 1280px) {
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const Title = styled.h1`

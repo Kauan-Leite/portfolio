@@ -11,6 +11,10 @@ export const Container = styled.div`
   margin-top: 25vh;
   margin-bottom: 25vh;
   padding-top: 200px;
+
+  @media (max-width: 1280px) {
+    margin-top: 2vh;
+  }
 `
 
 export const BehindTitle = styled.h1`
@@ -38,6 +42,9 @@ export const Title = styled.h1`
 
 export const ContentDiv = styled.div`
   display: flex;
+  @media (max-width: 1280px) {
+    flex-direction: column; 
+  }
   /* background-color: red; */
 `
 
@@ -45,12 +52,24 @@ export const InfosDiv = styled.div`
   display: flex;
   width: 60%;
   margin-left: 400px;
+
+  @media (max-width: 1280px) {
+    margin-left: auto;
+    width: 80%;
+    justify-content: center;
+  }
+
+  @media (max-width: 710px) {
+    width: 100%;
+  }
+  
 `
 
 export const Info = styled.div`
   width: 100%;
   margin: 10px;
   /* background-color: red; */
+
 `
 
 export const Subtitle = styled.h2`
@@ -73,6 +92,12 @@ export const BoxDiv = styled.div`
   /* justify-content: center; */
   margin-left: 80px;
   /* background-color: red; */
+
+  @media (max-width: 1280px) {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
 `
 
 export const Box = styled.div`
