@@ -72,5 +72,26 @@ export type ResourceI18nType = {
     BTN_1: string,
     BTN_2: string,
     BTN_3: string,
+  },
+  CONTACT: {
+    BEHIND_TITLE: string,
+    TITLE_1: string,
+
+    TITLE: string,
+    SUBTITLE: string,
+
+    LOGO_1: string,
+    LOGO_2: string,
+    LOGO_3: string,
+
+    ERROR_NAME: string,
+    ERROR_PHONE_1: string,
+    ERROR_PHONE_2: string,
+    ERROR_EMAIL_1: string,
+    ERROR_EMAIL_2: string,
+    ERROR_MESSAGE: string,
+
+    INPUT_MESSAGE: string,
+    BTN_SEND: string,
   }
 }
