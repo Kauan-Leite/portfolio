@@ -11,6 +11,7 @@ import { AboutMe } from '@/components/AboutMe/AboutMe';
 import { Skills } from '@/components/Skills';
 import { Experience } from '@/components/Experience/Experience';
 import { Projects } from '@/components/Projects/Projects';
+import { Contact } from '@/components/Contact/Contact';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -30,6 +31,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Contact />
       </ThemeProvider>
     </main>
   );

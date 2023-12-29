@@ -31,6 +31,7 @@ export const NavBar = () => {
       checkVisible(document.getElementById('skills'), 'skills');
       checkVisible(document.getElementById('xp'), 'xp');
       checkVisible(document.getElementById('projects'), 'projects');
+      checkVisible(document.getElementById('contact'), 'contact');
     };
 
     window.addEventListener('scroll', verificarVisibilidade);
@@ -74,7 +75,7 @@ export const NavBar = () => {
             style={{ fontSize: '28px' }}
           />
         </Link>
-        <Link href="/">
+        <Link href="#contact">
           <CallRoundedIcon
             className={currActive === 'contact' ? 'active' : ''}
             style={{ fontSize: '28px' }}
