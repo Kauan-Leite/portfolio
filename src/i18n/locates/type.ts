@@ -27,6 +27,12 @@ export type ResourceI18nType = {
     RESPONSE_NATIONALITY: string,
     RESPONSE_ADDRESS: string,
 
+    BOX_1: string,
+    BOX_2: string,
+    BOX_3: string,
+    BOX_4: string,
+
+
     DOWNLOAD_URL: string,
   },
   SKILLS: {

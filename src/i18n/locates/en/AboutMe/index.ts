@@ -17,5 +17,10 @@ export const AboutMe = {
   RESPONSE_NATIONALITY: "Brazilian",
   RESPONSE_ADDRESS: "São Paulo - Brazil",
 
+  BOX_1:'Years of study',
+  BOX_2:'Year of experience',
+  BOX_3:'Led Project',
+  BOX_4:'Participations in Projects',
+
   DOWNLOAD_URL: '/Curriculum/pt.txt',
 }
