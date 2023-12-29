@@ -23,5 +23,5 @@ export const AboutMe = {
   BOX_4:'Participações em Projetos',
 
 
-  DOWNLOAD_URL: '/Curriculum/pt.txt',
+  DOWNLOAD_URL: '/Curriculum/PT/Curriculo - Kauan da Silva Leite.pdf',
 }
