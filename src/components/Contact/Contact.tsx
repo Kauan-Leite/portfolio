@@ -1,3 +1,4 @@
+import * as i18n from 'react-i18next';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -36,17 +37,16 @@ type Inputs = {
 };
 
 export const Contact = () => {
+  const { t } = i18n.useTranslation('CONTACT');
+
   const schema = yup.object().shape({
-    name: yup.string().required('O campo nome deve ser preenchido'),
+    name: yup.string().required(t('ERROR_NAME')),
     phone: yup
       .string()
-      .required('O campo telefone deve ser preenchido')
-      .matches(/^\+\d{2}\s\(\d{2}\)\s\d{5}-\d{4}$/, 'Insira um número válido'),
-    email: yup
-      .string()
-      .email('Insira um email válido')
-      .required('O campo email deve ser preenchido'),
-    message: yup.string().required('O campo mensagem deve ser preenchido'),
+      .required(t('ERROR_PHONE_1'))
+      .matches(/^\+\d{2}\s\(\d{2}\)\s\d{5}-\d{4}$/, t('ERROR_PHONE_2')),
+    email: yup.string().email(t('ERROR_EMAIL_1')).required(t('ERROR_EMAIL_2')),
+    message: yup.string().required(t('ERROR_MESSAGE')),
   });
 
   const {
@@ -85,35 +85,31 @@ export const Contact = () => {
         pauseOnHover
         theme="colored"
       />
-      <BehindTitle>NETWORKING</BehindTitle>
-      <Title>CONTACT</Title>
+      <BehindTitle>{t('BEHIND_TITLE')}</BehindTitle>
+      <Title>{t('TITLE_1')}</Title>
 
       <Content>
         <LeftSide>
-          <TitleLeft>ENTRE EM CONTATO!</TitleLeft>
-          <TextLeft>
-            Estou à disposição para esclarecer dúvidas relacionadas à área ou
-            simplesmente para bater um papo. Sinta-se à vontade para entrar em
-            contato e compartilhar suas perguntas ou apenas trocar ideias.
-          </TextLeft>
+          <TitleLeft>{t('TITLE')}</TitleLeft>
+          <TextLeft>{t('SUBTITLE')}</TextLeft>
           <Info>
             <Logo src="/Images/Contact/map.png" />
             <Data>
-              <SubText>Endereço</SubText>
+              <SubText>{t('LOGO_1')}</SubText>
               <Text>Itaquaquecetuba, São Paulo</Text>
             </Data>
           </Info>
           <Info>
             <Logo src="/Images/Contact/mail.png" />
             <Data>
-              <SubText>E-mail</SubText>
+              <SubText>{t('LOGO_2')}</SubText>
               <Text>kauan.s.leite@gmail.com</Text>
             </Data>
           </Info>
           <Info>
             <Logo src="/Images/Contact/phone.png" />
             <Data>
-              <SubText>Telefone</SubText>
+              <SubText>{t('LOGO_3')}</SubText>
               <Text>+55 (11) 96172-8880</Text>
             </Data>
           </Info>
@@ -166,7 +162,7 @@ export const Contact = () => {
               <Input
                 {...register('message')}
                 type="text"
-                placeholder="Insira sua mensagem..."
+                placeholder={t('INPUT_MESSAGE')}
                 multiline
                 rows={11}
                 fullWidth
@@ -175,7 +171,7 @@ export const Contact = () => {
               />
             </LineThree>
             <LineFour>
-              <BtnSend type="submit">Enviar</BtnSend>
+              <BtnSend type="submit">{t('BTN_SEND')}</BtnSend>
             </LineFour>
           </form>
         </RightSide>

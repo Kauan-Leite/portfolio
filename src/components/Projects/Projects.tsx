@@ -1,3 +1,4 @@
+import * as i18n from 'react-i18next';
 import { useState } from 'react';
 import {
   BehindTitle,
@@ -126,29 +127,32 @@ export const Projects = () => {
     setFilter(data);
     console.log(filter);
   };
+
+  const { t } = i18n.useTranslation('PROJECTS');
+
   return (
     <Container id="projects">
-      <BehindTitle>PROJECTS</BehindTitle>
-      <Title>WORKS</Title>
+      <BehindTitle>{t('BEHIND_TITLE')}</BehindTitle>
+      <Title>{t('TITLE_1')}</Title>
 
       <ContainerButtons>
         <Button
           className={filter === 'A' ? 'active' : ''}
           onClick={() => changeFilter('A')}
         >
-          All
+          {t('BTN_1')}
         </Button>
         <Button
           className={filter === 'F' ? 'active' : ''}
           onClick={() => changeFilter('F')}
         >
-          Front
+          {t('BTN_2')}
         </Button>
         <Button
           className={filter === 'B' ? 'active' : ''}
           onClick={() => changeFilter('B')}
         >
-          Back
+          {t('BTN_3')}
         </Button>
       </ContainerButtons>
       <ContainerSlides>
