@@ -6,6 +6,7 @@ import { Skills } from './Skills'
 import { Experience } from './Experience'
 import { Projects } from './Projects'
 import { Contact } from './Contact'
+import { Footer } from './Footer'
 
 export const ResourceI18nEN: ResourceI18nType = {
   HEADER: Header,
@@ -14,5 +15,6 @@ export const ResourceI18nEN: ResourceI18nType = {
   SKILLS: Skills,
   EXPERIENCE: Experience,
   PROJECTS: Projects,
-  CONTACT: Contact
+  CONTACT: Contact,
+  FOOTER: Footer
 }

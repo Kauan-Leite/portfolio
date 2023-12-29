@@ -93,5 +93,8 @@ export type ResourceI18nType = {
 
     INPUT_MESSAGE: string,
     BTN_SEND: string,
+  },
+  FOOTER: {
+    TEXT: string,
   }
 }
