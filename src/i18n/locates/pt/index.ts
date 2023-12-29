@@ -4,6 +4,7 @@ import { Hero } from './Hero'
 import { AboutMe } from './AboutMe'
 import { Skills } from './Skills'
 import { Experience } from './Experience'
+import { Projects } from './Projects'
 
 
 export const ResourceI18nPT: ResourceI18nType = {
@@ -11,5 +12,6 @@ export const ResourceI18nPT: ResourceI18nType = {
   HERO: Hero,
   ABOUTME: AboutMe,
   SKILLS: Skills,
-  EXPERIENCE: Experience
+  EXPERIENCE: Experience,
+  PROJECTS: Projects
 }

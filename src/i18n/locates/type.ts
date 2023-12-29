@@ -64,5 +64,13 @@ export type ResourceI18nType = {
     ITEM_4_TITLE_1: string,
     ITEM_4_TITLE_2: string,
     ITEM_4_SUBTITLE: string,
+  },
+  PROJECTS: {
+    BEHIND_TITLE: string,
+    TITLE_1: string,
+
+    BTN_1: string,
+    BTN_2: string,
+    BTN_3: string,
   }
 }
