@@ -12,6 +12,7 @@ import { Skills } from '@/components/Skills';
 import { Experience } from '@/components/Experience/Experience';
 import { Projects } from '@/components/Projects/Projects';
 import { Contact } from '@/components/Contact/Contact';
+import { Footer } from '@/components/Footer/Footer';
 
 export default function Home() {
   const [theme, setTheme] = useState('dark');
@@ -32,6 +33,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </ThemeProvider>
     </main>
   );

@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 40vh;
-  margin-bottom: 40vh;
+  margin-bottom: 20vh;
 `
 
 export const BehindTitle = styled.h1`
