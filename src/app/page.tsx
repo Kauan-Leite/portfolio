@@ -26,14 +26,14 @@ export default function Home() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Header theme={theme} themeToggler={themeToggler} />
-        <NavBar />
+        {/* <NavBar /> */}
         <Hero />
         <AboutMe />
         <Skills />
         <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
+        {/* <Projects /> */}
+        {/* <Contact /> */}
+        {/* <Footer /> */}
       </ThemeProvider>
     </main>
   );
