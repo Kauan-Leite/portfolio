@@ -59,16 +59,19 @@ export const Contact = () => {
   });
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log(data);
-    toast.success('🦄 Wow so easy!', {
-      position: 'top-right',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'colored',
-    });
+    toast.warning(
+      'Funcionalidade ainda não implementada, peço que envie o email manualmente :)',
+      {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+      }
+    );
   };
 
   return (
