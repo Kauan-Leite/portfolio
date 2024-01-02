@@ -12,25 +12,39 @@ export const Container = styled.div`
 `
 
 export const BehindTitle = styled.h1`
-  color: gray;
-  opacity: 0.2;
-  font-size: 70px;
-  letter-spacing:10px;
-  margin: 0;
-  margin-bottom: -82px;
+  font-size: 0;
 
-  text-transform: uppercase;
-  font-weight: 900;
+  @media (min-width: 500px) {
+    color: gray;
+    opacity: 0.2;
+    letter-spacing:10px;
+    margin: 0;
+    margin-bottom: -82px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3em;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 70px;
+  }
 `
 
 export const Title = styled.h1`
+  margin-top: 37px;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 35px;
   z-index: 1;
-
   span {
     color: ${props => props.theme.colors.secondary};
+  }
+  @media (min-width: 1280px) {
+    margin-top: 25px;
+    font-size: 35px;
+  }
+
+  @media (max-width: 446px) {
+    font-size: 1.5em;
   }
 `
 
@@ -56,7 +70,7 @@ export const Button = styled.button`
 `
 
 export const ContainerSlides = styled.div`
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   .swiper-grid-column > .swiper-wrapper {
