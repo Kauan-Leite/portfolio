@@ -20,6 +20,7 @@ export type ResourceI18nType = {
     LABEL_LAST_NAME: string,
     LABEL_NATIONALITY: string,
     LABEL_ADDRESS: string,
+    LABEL_NAME: string,
 
     RESPONSE_AGE: string,
     RESPONSE_FREELANCE: string,

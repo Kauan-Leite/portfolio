@@ -43,7 +43,7 @@ export const AboutMe = () => {
 
       <ContentDiv>
         <InfosDiv>
-          <Info>
+          <Info className="desktop">
             <Subtitle>{t('SUBTITLE')}</Subtitle>
             <DetailLine>
               <span>{t('LABEL_FIRST_NAME')}:</span> Kauan
@@ -66,7 +66,7 @@ export const AboutMe = () => {
               <DownloadBtn />
             </MoreBtn>
           </Info>
-          <Info>
+          <Info className="desktop">
             <DetailLine style={{ marginTop: '87.9px' }}>
               <span>{t('LABEL_LAST_NAME')}:</span> Leite
             </DetailLine>
@@ -79,6 +79,38 @@ export const AboutMe = () => {
             <DetailLine>
               <span>Email:</span> kauan.s.leite@gmail.com
             </DetailLine>
+          </Info>
+          <Info className="mobile">
+            <Subtitle>{t('SUBTITLE')}</Subtitle>
+            <DetailLine>
+              <span>{t('LABEL_NAME')}:</span> Kauan da Silva Leite
+            </DetailLine>
+            <DetailLine>
+              <span>{t('LABEL_AGE')}:</span> {age('31/01/2004')}{' '}
+              {t('RESPONSE_AGE')}
+            </DetailLine>
+            <DetailLine>
+              <span>{t('LABEL_NATIONALITY')}:</span> {t('RESPONSE_NATIONALITY')}
+            </DetailLine>
+            <DetailLine>
+              <span>{t('LABEL_ADDRESS')}:</span> {t('RESPONSE_ADDRESS')}
+            </DetailLine>
+            <DetailLine>
+              <span>{t('LABEL_PHONE')}:</span> +55 (11) 96172-8880
+            </DetailLine>
+            <DetailLine>
+              <span>Email:</span> kauan.s.leite@gmail.com
+            </DetailLine>
+            <DetailLine>
+              <span>{t('LABEL_LANGUAGES')}:</span> {t('RESPONSE_LANGUAGES')}
+            </DetailLine>
+            <DetailLine>
+              <span>Freelance:</span> {t('RESPONSE_FREELANCE')}
+            </DetailLine>
+            <MoreBtn href={t('DOWNLOAD_URL')} download>
+              Download CV
+              <DownloadBtn />
+            </MoreBtn>
           </Info>
         </InfosDiv>
         <BoxDiv>

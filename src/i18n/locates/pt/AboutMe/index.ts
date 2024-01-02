@@ -10,6 +10,7 @@ export const AboutMe = {
   LABEL_LAST_NAME: 'Sobrenome',
   LABEL_NATIONALITY: 'Nacionalidade',
   LABEL_ADDRESS: 'Endereço',
+  LABEL_NAME: 'Nome',
 
   RESPONSE_AGE: "Anos",
   RESPONSE_FREELANCE: "Disponivel",
