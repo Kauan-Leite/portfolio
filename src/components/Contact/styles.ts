@@ -112,10 +112,14 @@ export const SubText = styled.p`
 export const Text = styled.p``
 
 export const Social = styled.div`
-  max-width: 32%;
   display: flex;
   justify-content: space-between;
   margin-left: 6px;
+  max-width: 80%;
+
+  @media (min-width:1080px) {
+    max-width: 32%;
+  }
 
   @media (max-width:1080px) {
     width: 80%;
@@ -124,11 +128,8 @@ export const Social = styled.div`
 `
 
 export const MediaBtn = styled.img`
-  width: 20px;
-  height: 20px;
-  background-color: gray;
-  padding: 8px;
-  border-radius: 100%;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 `
 

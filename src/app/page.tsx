@@ -32,7 +32,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
-        <Contact />
+        <Contact theme={theme} />
         <Footer />
       </ThemeProvider>
     </main>

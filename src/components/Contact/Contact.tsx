@@ -36,7 +36,11 @@ type Inputs = {
   message: string;
 };
 
-export const Contact = () => {
+interface Props {
+  theme: string;
+}
+
+export const Contact = ({ theme }: Props) => {
   const { t } = i18n.useTranslation('CONTACT');
 
   const schema = yup.object().shape({
@@ -96,21 +100,39 @@ export const Contact = () => {
           <TitleLeft>{t('TITLE')}</TitleLeft>
           <TextLeft>{t('SUBTITLE')}</TextLeft>
           <Info>
-            <Logo src="/Images/Contact/map.png" />
+            <Logo
+              src={
+                theme === 'dark'
+                  ? '/Images/Contact/map-yellow.png'
+                  : '/Images/Contact/map-blue.png'
+              }
+            />
             <Data>
               <SubText>{t('LOGO_1')}</SubText>
               <Text>Itaquaquecetuba, São Paulo</Text>
             </Data>
           </Info>
           <Info>
-            <Logo src="/Images/Contact/mail.png" />
+            <Logo
+              src={
+                theme === 'dark'
+                  ? '/Images/Contact/mail-yellow.png'
+                  : '/Images/Contact/mail-blue.png'
+              }
+            />
             <Data>
               <SubText>{t('LOGO_2')}</SubText>
               <Text>kauan.s.leite@gmail.com</Text>
             </Data>
           </Info>
           <Info>
-            <Logo src="/Images/Contact/phone.png" />
+            <Logo
+              src={
+                theme === 'dark'
+                  ? '/Images/Contact/phone-yellow.png'
+                  : '/Images/Contact/phone-blue.png'
+              }
+            />
             <Data>
               <SubText>{t('LOGO_3')}</SubText>
               <Text>+55 (11) 96172-8880</Text>
