@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { Container, Nav } from './styles';
+import { Container, LinkEdited, Nav } from './styles';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import HomeRepairServiceRoundedIcon from '@mui/icons-material/HomeRepairServiceRounded';
@@ -45,42 +44,42 @@ export const NavBar = () => {
   return (
     <Container>
       <Nav>
-        <Link href="#home">
+        <LinkEdited href="#home">
           <HomeRoundedIcon
             className={currActive === 'home' ? 'active' : ''}
             style={{ fontSize: '28px' }}
           />
-        </Link>
-        <Link href="#aboutme">
+        </LinkEdited>
+        <LinkEdited href="#aboutme">
           <PersonRoundedIcon
             className={currActive === 'aboutme' ? 'active' : ''}
             style={{ fontSize: '28px' }}
           />
-        </Link>
-        <Link href="#skills">
+        </LinkEdited>
+        <LinkEdited href="#skills">
           <HomeRepairServiceRoundedIcon
             className={currActive === 'skills' ? 'active' : ''}
             style={{ fontSize: '28px' }}
           />
-        </Link>
-        <Link href="#xp">
+        </LinkEdited>
+        <LinkEdited href="#xp">
           <ExploreRoundedIcon
             className={currActive === 'xp' ? 'active' : ''}
             style={{ fontSize: '28px' }}
           />
-        </Link>
-        <Link href="#projects">
+        </LinkEdited>
+        <LinkEdited href="#projects">
           <KeyboardRoundedIcon
             className={currActive === 'projects' ? 'active' : ''}
             style={{ fontSize: '28px' }}
           />
-        </Link>
-        <Link href="#contact">
+        </LinkEdited>
+        <LinkEdited href="#contact">
           <CallRoundedIcon
             className={currActive === 'contact' ? 'active' : ''}
             style={{ fontSize: '28px' }}
           />
-        </Link>
+        </LinkEdited>
       </Nav>
     </Container>
   );
