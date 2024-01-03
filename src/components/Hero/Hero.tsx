@@ -18,7 +18,7 @@ export const Hero = () => {
     <Container>
       <Left>
         <ColoredDiv />
-        <Image src="/Images/Hero/placeholder.svg" alt="user image" />
+        <Image src="/Images/Hero/me.jpeg" alt="user image" />
       </Left>
       <Right>
         <Title>{t('TITLE')}</Title>
