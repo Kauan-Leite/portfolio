@@ -55,4 +55,7 @@ justify-content: center;
     align-items: center;
     transition: .5s;
 }
-  `
+
+`
+
+export const LinkEdited = styled.a``
