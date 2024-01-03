@@ -116,6 +116,7 @@ export const Card = styled.div`
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  background-size: contain;
 `
 
 export const HeaderCard = styled.div`

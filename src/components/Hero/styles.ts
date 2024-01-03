@@ -38,7 +38,8 @@ export const ColoredDiv = styled.div`
 export const Image = styled.img`
     border-radius: 6px 6px 6px 6px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+    width: 450px;
+    /* height: 700px; */
     max-width: 80%;
     @media (min-width: 1280px) {
       position: absolute;
