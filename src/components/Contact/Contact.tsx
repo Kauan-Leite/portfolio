@@ -139,13 +139,16 @@ export const Contact = ({ theme }: Props) => {
             </Data>
           </Info>
           <Social>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/kauansleite/" target="_blank">
               <MediaBtn src="/Images/Contact/instagram.png" />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/_KauanLeite_" target="_blank">
               <MediaBtn src="/Images/Contact/twitter.png" />
             </a>
-            <a href="#" target="_blank">
+            <a
+              href="https://api.whatsapp.com/send/?phone=11961728880&text=Ol%C3%A1+vim+atrav%C3%A9s+do+seu+portf%C3%B3lio+e+gostaria+de+conversar+um+pouco+mais%21%21%21&type=phone_number&app_absent=0"
+              target="_blank"
+            >
               <MediaBtn src="/Images/Contact/whatsapp.png" />
             </a>
           </Social>
